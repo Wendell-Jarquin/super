@@ -1,118 +1,87 @@
-/* styles.css */
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
+/* Estilos generales para el cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
 }
 
+/* Estilos para el contenedor principal */
 #app {
-    text-align: center;
-    margin: 20px;
+
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para el título de la lista */
 .Titulo-Lista {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    color: #00ffdd;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de la lista */
+.Lista-Contenedor {
+    text-align: left;
+}
+
+/* Estilos para el formulario de agregar un producto */
+.Lista-Agregar-Lista {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 #input-lista {
-    padding: 0.8rem 1rem;
-    width: 90%;
-    border-radius: 0.6rem;
-    border: 1px solid #000;
-    font-weight: bold;
-    font-size: 1rem;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #boton-agregar {
-    padding: 0.8rem 1.5rem;
-    width: 30%;
-    background-color: #2b712b;
+    background-color: #198900;
     color: #fff;
-    font-weight: bold;
     border: none;
-    border-radius: 0.8rem;
-    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
-.Lista-Agregar-Lista {
-    display: flex;
-    gap: 1rem;
-    width: 50%;
-    margin: 0 auto;
+#boton-agregar:hover {
+    background-color: #0f270a;
 }
 
-.Lista-Contenedor {
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Estilos para la lista de productos */
 #lista-super {
     list-style: none;
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.471);
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2a2219;
 }
 
 .lista-item {
-    list-style: none;
-    width: 100%;
-    padding: 1rem;
-    /* border: 1px solid #000; */
-    border-radius: 0.5rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    background-color: #fff;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.lista-item>span {
-    display: inline-block;
-    margin-left: 1rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: black;
-
-}
-
-.lista-item>button {
-    margin-right: 1rem;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #boton-eliminar {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    font-size: x-small;
-    font-weight: bold;
+    background-color: #ff0000;
+    color: #fff;
     border: none;
-    border-radius: 6px;
-    padding: 0.5rem;
-    color: white;
-    background: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
